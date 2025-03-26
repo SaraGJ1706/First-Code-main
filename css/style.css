@@ -1,0 +1,103 @@
+/* Estilo del encabezado principal */
+.header1 {
+    color: #000000;
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: 620px;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Asegúrate de que no haya margen */
+    padding: 0; /* Asegúrate de que no haya padding */
+    text-align: center;
+}
+
+/* Estilo del enccabezado de las imagenes de GitHub (PROYECTOS) */
+h6 {
+    text-align: center;
+}
+
+/*Ajuste de las imagenes de GitHub*/
+.img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Centrar las imágenes dentro del contenedor .row */
+.row {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+}
+
+/*Estilo del encabezado de color verde*/
+.header2 {
+    color: #ffffff;
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: 100px;
+    background-color: rgb(30, 190, 174);
+    background-position: center;
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Asegúrate de que no haya margen */
+    padding: 0; /* Asegúrate de que no haya padding */
+    text-align: center;
+}
+
+/*Estilo del pie de pagina con el fondo transparente*/
+#footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+    background-color: rgba(0, 0, 0, 0.444);
+    width: 100%;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/*Estilo del pie de pagina de fondo opaco*/
+#footer2 {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    width: 100%;
+}
+
+/*Color del texto del pie de pagina con fondo transparete*/
+.color{
+    color: #ffffff;
+}
+
+/*Media Query, adaptacion a telefono*/
+@media (max-width: 768px) {
+    .header1 {
+        height: 400px;
+        width: 100%;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .header2 {
+        height: auto;
+        width: 100%;
+    }
+    .col-sm-12 {
+        order: 3; /* Mueve el título al final */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+
+    .col-sm-6 {
+        order: 1; /* Mueve Soporte y Diseñador al principio */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+    }
+
+    .row {
+        width: 100%;
+    }
+}
